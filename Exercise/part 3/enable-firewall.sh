@@ -1,0 +1,1 @@
+sudo cp iptables-rules.sh /etc/iptables && sudo cp reset-iptables-rules.sh /etc/iptables && cd /etc/iptables &&  sudo chmod +x iptables-rules.sh && sudo chmod +x reset-iptables-rules.sh && sudo ./iptables-rules.sh

@@ -1,0 +1,21 @@
+-----The systemd-run command------
+Used to build transient timers
+
+Unit files:
+	Names start with run-
+	Typically located in /run/systemd/transient/
+Helpful options:
+	Set time to run job: --on-calender="time/date syntax"
+	Set timer to run system job: --system
+	(default; requires super user privileges)
+	Set timer to run user job: --user
+systemd unit file locations:
+	/etc/systemd/
+	/run/systemd/
+	/usr/lib/systemd/
+	
+Files found in /etc/systemd/ override
+	files found in /run/systemd/
+
+Files found in /run/systemd/ override
+	files found in /usr/lib/systemd/

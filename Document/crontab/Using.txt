@@ -1,0 +1,53 @@
+Crontab (cron table) trong Linux là một hệ thống lên lịch cho phép bạn thực hiện các tác vụ định kỳ hoặc tự động vào thời điểm cố định.
+Crontab cho phép bạn lên lịch cho các tác vụ như chạy các lệnh, tập lệnh, hoặc tập tin kịch bản (scripts) theo lịch trình đã định. 
+Dưới đây là một số thông tin cơ bản về crontab trong Linux:
+Các tệp Crontab: Mỗi người dùng trên hệ thống Linux có một tệp crontab riêng, được lưu trữ trong /var/spool/cron/crontabs/ hoặc /var/spool/cron/ hoặc trong một vị trí tương tự. 
+Để chỉnh sửa crontab của một người dùng cụ thể, bạn có thể sử dụng lệnh crontab.
+ 
+ * * * * * command_to_execute
+- - - - -
+| | | | |
+| | | | +----- Ngày trong tuần (0 - 7) (Mặc định: 0 và 7 đều tượng trung cho Chủ Nhật)
+| | | +------- Tháng (1 - 12)
+| | +--------- Ngày trong tháng (1 - 31)
+| +----------- Giờ (0 - 23)
++------------- Phút (0 - 59)
+
+crontab record format 
+sample 30  1  31  12  *   /home/trung/yearEndPrep.sh
+
+1. Minute passed the hour (Can use 0 through 59) 
+2. Hour of the day (Can use 0 through 23)
+3. Day of the month (Can use 1 through 31)
+4. Month of the year (Can use 1 through 12)
+5 . Day of the week (Can use 0 through 7 ; Sunday = 0 or 7) 
+6. Command to run
+
+-----Use an asterisks (*) to represent all-----
+Example: Run job at 15 minutes passed the hour
+15 *  *  *  * wc -l /etc/passwd
+
+-----Use three letter names for Month of the Year-----
+(Can use jan, feb, mar, apr, may, jun, jul, aug, sep, oct, nov, or dec)
+
+-----Use three letter names for Day of the Week-----
+(Can use sun, mon, tue, wed, thu, fri, or sat )
+
+------Use a comma for multiple runs with one record------
+Example: Run job at both 15 & 45 minutes passed hour
+15,45 *  *  *  * wc -l /etc/passwd
+
+-----Use a dash for multiple runs with one record-----
+Example: Run job at 15 minutes passed hour on Monday - Friday
+15 *  *  *  1-5  wc -l /etc/passwd
+
+-----Use a slash for multiple stepped runs with one record-----
+Example: Run job every 2 hours, between 8am and 5pm daily
+0  8-17/2  *  *  * wc -l /etc/passwd
+
+* some option 
+Use the crontab -e command to edit/create your crontab file
+Use the crontab -l command to view your crontab file
+Use the crontab -r command to delete your crontab file
+Add the -u username to any of the above commands along with
+super user privileges to manage another account's crontab file
