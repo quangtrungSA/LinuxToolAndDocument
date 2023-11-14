@@ -1,0 +1,26 @@
+Chế độ Command (Normal Mode):
+1.	i: Chuyển sang chế độ Insert trước dấu nháy vị trí con trỏ.
+2.	I: Chuyển sang chế độ Insert ở đầu dòng hiện tại.
+3.	a: Chuyển sang chế độ Insert sau dấu nháy vị trí con trỏ.
+4.	A: Chuyển sang chế độ Insert ở cuối dòng hiện tại.
+5.	o: Thêm dòng mới dưới con trỏ và chuyển sang chế độ Insert.
+6.	O: Thêm dòng mới trên con trỏ và chuyển sang chế độ Insert.
+7.	x: Xóa ký tự tại vị trí con trỏ.
+8.	dd: Xóa dòng hiện tại.
+9.	dw: Xóa một từ (khoảng trắng và dấu cách làm kết thúc từ).
+10.	D: Xóa từ vị trí con trỏ tới cuối dòng.
+11.	yy: Sao chép (copy) dòng hiện tại.
+12.	yw: Sao chép (copy) một từ (khoảng trắng và dấu cách làm kết thúc từ).
+13.	p: Dán (paste) văn bản ở sau dấu nháy vị trí con trỏ.
+14.	P: Dán (paste) văn bản ở trước dấu nháy vị trí con trỏ.
+15.	u: Hoàn tác thay đổi cuối cùng.
+16.	Ctrl-R: Làm lại thay đổi sau khi đã hoàn tác.
+-----------------------------------------------------------
+Chế độ Insert:
+1.	Esc: Trở lại chế độ Command (Normal Mode).
+2.	Ctrl-C: Trở lại chế độ Command (Normal Mode).
+Lưu và thoát:
+1.	/pattern: Tìm kiếm mẫu "pattern" xuống (sử dụng "n" để tìm kiếm tiếp theo và "N" để tìm kiếm ngược lại).
+2.	?pattern: Tìm kiếm mẫu "pattern" lên (sử dụng "n" để tìm kiếm tiếp theo và "N" để tìm kiếm ngược lại).
+3.	:s/old/new: Thay thế "old" bằng "new" trên dòng hiện tại.
+4.	:%s/old/new/g: Thay thế "old" bằng "new" trên toàn bộ tệp.

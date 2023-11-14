@@ -1,0 +1,21 @@
+
+CUPS (Common Unix Printing System): CUPS là một hệ thống quản lý in ấn phổ biến trên hầu hết các hệ điều hành Linux. 
+Nó cung cấp giao diện dòng lệnh và giao diện người dùng đồ họa để quản lý các máy in và công việc in ấn.
+
+----Line printer (lp) daemon-----
+Legacy printing daemon protocol
+Printer configuration: /etc/printcap
+
+-----Printer commands-----
+Send file to printer:  
+	lp -d 
+	lpr -P
+View printer queue status:  
+	lpstat
+	lpq
+Remove print jobs from a queue:
+	cancel
+	lprms
+lp: Lệnh này cho phép bạn gửi một tệp in đến máy in.
+lpr: Lệnh này cũng được sử dụng để in tệp tin.
+lpstat: Lệnh này được sử dụng để hiển thị trạng thái của máy in và công việc in đang chờ.

@@ -1,0 +1,36 @@
+Lệnh rpm (Red Hat Package Manager) là một công cụ dòng lệnh được sử dụng trong các hệ điều hành dựa trên RPM (Red Hat Package Manager) như CentOS, Fedora và Red Hat Enterprise Linux để quản lý các gói phần mềm. 
+Dưới đây là một số lệnh phổ biến và tùy chọn của rpm:
+-----
+Cài đặt gói phần mềm:
+rpm -i package.rpm
+Tùy chọn:
+•	-v: Hiển thị thông tin chi tiết về quá trình cài đặt.
+•	-h: Hiển thị tiêu đề và hiệu chỉnh tiến trình.
+-----
+Cài đặt gói phần mềm (không cần thông báo):
+rpm -ivh package.rpm
+-----
+Gỡ bỏ gói phần mềm:
+rpm -e package-name
+Tùy chọn:
+•	--nodeps: Gỡ bỏ gói mà không kiểm tra phụ thuộc.
+-----
+Hiển thị thông tin về gói đã cài đặt:
+Tùy chọn:
+•	-i: Hiển thị thông tin chi tiết về gói.
+•	-l: Liệt kê các tệp tin thuộc gói.
+•	-p: Hiển thị thông tin từ gói RPM chưa được cài đặt.
+-----
+Kiểm tra xem gói có được cài đặt hay không:
+rpm -q package-name
+Liệt kê tất cả các gói đã cài đặt:
+rpm -qa
+Hiển thị thông tin về gói RPM:
+rpm -qi package-name
+Liệt kê các tệp thuộc gói RPM:
+rpm -ql package-name
+Kiểm tra sự phụ thuộc của gói RPM:
+rpm -qR package-name
+Tải gói RPM từ kho lưu trữ RPM:
+rpm -ivh ftp://example.com/package.rpm
+Lưu ý rằng rpm là công cụ quản lý gói cơ bản và không giải quyết tự động các phụ thuộc, trong khi các trình quản lý gói cao cấp như Yum hoặc Dnf thực hiện điều này một cách tự động.
