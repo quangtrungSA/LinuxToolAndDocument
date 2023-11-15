@@ -1,0 +1,10 @@
+/sbin là một thư mục quan trọng trong hệ thống tệp của các hệ điều hành Unix và Linux. Thư mục này chứa các tệp thực thi (executables) cần thiết để khởi động hệ thống và quản lý nó.
+Cụ thể, Dưới đây là một số ví dụ về các tệp thực thi quan trọng có thể được tìm thấy trong /sbin:
+•	/sbin/init: Là tiến trình init, tiến trình đầu tiên được khởi chạy khi hệ thống Linux bắt đầu, và nó quản lý quá trình khởi động của hệ thống.
+•	/sbin/reboot: Là lệnh để khởi động lại hệ thống.
+•	/sbin/halt: Là lệnh để tắt máy tính một cách an toàn.
+•	/sbin/shutdown: Là lệnh để lập lịch hoặc thực hiện việc tắt máy tính hoặc khởi động lại dựa trên một lịch trình cụ thể.
+•	/sbin/fsck: Là lệnh kiểm tra và sửa chữa hệ thống tệp trong trường hợp hỏng hóc.
+•	/sbin/mount: Là lệnh để gắn kết (mount) các hệ thống tệp.
+•	/sbin/umount: Là lệnh để gỡ bỏ (unmount) các hệ thống tệp đã gắn kết.
+Các lệnh và tệp thực thi trong /sbin thường được sử dụng trong quá trình khởi động và quản lý hệ thống, và chúng thường đòi hỏi quyền superuser (quyền root) để thực thi. Thư mục /sbin là một phần quan trọng của hệ thống tệp Linux và Unix.

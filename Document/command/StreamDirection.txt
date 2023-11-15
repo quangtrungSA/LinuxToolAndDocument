@@ -1,0 +1,22 @@
+Trong hệ thống Unix và Linux, stream redirection là một cách để điều hướng dữ liệu đầu ra hoặc đầu vào từ và đến các tệp hoặc thiết bị khác.
+Có một số cách để thực hiện stream redirection.
+Dưới đây là tất cả các loại stream redirection chính:
+
+1.	Standard Output (stdout):
+> : Dùng để ghi đè dữ liệu đầu ra tiêu chuẩn vào một tệp tin mới hoặc hiện tại hoặc ghi đè dữ liệu một tệp tin hiện có. Ví dụ:
+command > output.txt
+>> : Dùng để nối dữ liệu đầu ra tiêu chuẩn vào một tệp tin mới hoặc hiện tại hoặc nối dữ liệu vào một tệp tin hiện có. Ví dụ:
+command >> output.txt
+
+2. Standard Error (stderr):
+2>:  Dùng để điều hướng dữ liệu đầu ra lỗi (stderr) vào một tệp tin hoặc thiết bị khác. Ví dụ:
+command 2> error.txt
+2>> : Dùng để nối dữ liệu đầu ra lỗi vào một tệp tin hoặc thiết bị khác. Ví dụ:
+command 2>> error.txt
+
+3 Combine Standard Output and Standard Error:
+2>&1: Dùng để kết hợp stdout và stderr, điều hướng cả hai sang cùng một nơi, thường là màn hình hoặc tệp tin. Ví dụ:
+command > output.txt 2>&1
+
+<< : Được sử dụng để cung cấp đầu vào cho một lệnh từ văn bản trong mã shell. Ví dụ:
+command << EOF

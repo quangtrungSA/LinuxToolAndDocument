@@ -1,0 +1,10 @@
+Các hệ thống tệp Linux : 
+	1. EXT4 (Fourth Extended File System): EXT4 là một phiên bản nâng cấp của EXT3 và là một trong những hệ thống tệp phổ biến nhất trên Linux. 
+Nó hỗ trợ dung lượng lớn, quản lý dữ liệu hiệu quả và có khả năng khắc phục lỗi.
+	2. EXT3 (Third Extended File System): EXT3 là phiên bản trước của EXT4 và nó cũng được sử dụng rộng rãi. EXT3 hỗ trợ journaling, giúp khôi phục dữ liệu sau mất điện hoặc sự cố hệ thống.
+	3. Btrfs (B-tree File System): Btrfs là một hệ thống tệp hiện đại với nhiều tính năng mạnh mẽ. Nó hỗ trợ snapshot, compression, deduplication và nhiều tính năng khác.
+	4. XFS (X File System): XFS được phát triển bởi Silicon Graphics (SGI) và được sử dụng phổ biến trong môi trường doanh nghiệp. Nó hỗ trợ quản lý dung lượng lớn và hiệu suất cao.
+	5. ZFS (Zettabyte File System): ZFS là một hệ thống tệp mạnh mẽ có nguồn gốc từ Sun Microsystems (nay là Oracle). Nó kết hợp hệ thống quản lý dung lượng và các tính năng bảo mật mạnh mẽ.
+	6. ReiserFS: ReiserFS là một hệ thống tệp được thiết kế để cải thiện hiệu suất đọc và ghi dữ liệu nhỏ. Tuy nhiên, nó không còn được phát triển hoặc hỗ trợ rộng rãi trong các bản phân phối Linux gần đây.
+	7. JFS (IBM Journaling File System): JFS là một hệ thống tệp phát triển bởi IBM và được thiết kế với mục tiêu tối ưu hóa hiệu suất và khôi phục lỗi.
+	8. NILFS (New Implementation of a Log-structured File System): NILFS là một hệ thống tệp log-structured, nghĩa là nó sử dụng journaling để quản lý dữ liệu

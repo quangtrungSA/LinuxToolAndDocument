@@ -1,0 +1,11 @@
+-------------------/usr---------------------
+/usr: Chứa các ứng dụng và thư viện cài đặt cho toàn bộ hệ thống. Đây là một phần quan trọng của hệ thống Linux.
+
+1. /usr/share/man
+    Thư mục /usr/share/man chứa các tệp manual pages (man pages) của hệ thống, không phải là một tệp duy nhất.
+Man pages là tài liệu dạng văn bản được sử dụng để cung cấp thông tin về các lệnh, hàm, file formats, conventions, và các khía cạnh khác của hệ thống và các ứng dụng.
+    Thư mục /usr/share/man thường được chia thành các thư mục con dựa trên các "sections" hoặc phần khác nhau của man pages. Các sections thông thường bao gồm:
+2. /usr/lib64/
+    Trong nhiều hệ thống Linux 64-bit, thư mục /usr/lib64/ thường được sử dụng để chứa thư viện (libraries) 64-bit liên quan đến ứng dụng và các phần mềm của hệ thống. Thư mục này chứa các thư viện 64-bit được sử dụng bởi các ứng dụng và chương trình trên hệ thống 64-bit.
+    Thư mục /usr/lib64/ không phải lúc nào cũng tồn tại trên tất cả các phiên bản Linux và phụ thuộc vào cấu hình cụ thể của hệ thống. Nó có thể có tên khác trên các phiên bản Linux khác nhau hoặc có thể không tồn tại nếu các thư viện 64-bit được lưu trữ trong /usr/lib/ hoặc các thư mục khác.
+    hường thì, /usr/lib64/ được sử dụng trên các hệ thống Linux 64-bit để phân biệt giữa các thư viện 32-bit và 64-bit, đồng thời hỗ trợ các ứng dụng và phần mềm 64-bit.

@@ -1,0 +1,20 @@
+-------------UEFI----------------
+UEFI (Unified Extensible Firmware Interface) là một giao diện firmware có thể mở rộng, được thiết kế để thay thế cho BIOS (Basic Input/Output System) trong các máy tính cá nhân và máy chủ.
+Nó cung cấp các tính năng mở rộng hơn so với BIOS và có thể dễ dàng hỗ trợ các hệ điều hành mới hơn.
+
+-------------BIOS----------------
+BIOS (Basic Input/Output System) là một phần của máy tính và không liên quan trực tiếp đến hệ điều hành Linux. 
+BIOS là một lớp phần mềm nằm trên một chip nằm trên bo mạch chủ (mainboard) của máy tính và thường được cài đặt bởi nhà sản xuất máy tính hoặc mainboard.
+Nó có vai trò quản lý phần cứng của máy tính và chịu trách nhiệm khởi động hệ thống và truy cập các thiết bị như ổ cứng, bàn phím, màn hình, và nhiều thiết bị khác.
+Hệ điều hành Linux hoạt động trên máy tính sau khi BIOS đã hoàn thành quá trình khởi động. Khi máy tính khởi động, BIOS thường kiểm tra các thiết bị phần cứng và sau đó nạp một trình boot loader như GRUB (GRand Unified Bootloader). 
+Boot loader sau đó khởi động hệ điều hành Linux, và Linux tiếp tục quá trình khởi động và quản lý hệ thống từ đó.
+Mặc dù BIOS không trực tiếp liên quan đến hệ điều hành Linux, nó vẫn đóng một vai trò quan trọng trong việc hỗ trợ và tương thích phần cứng cho hệ thống Linux, đặc biệt là trong quá trình khởi động ban đầu của máy tính.
+
+-----------So sánh UEFI so với LEGACY BIOS-----------------
+UEFI và Legacy BIOS là hai giao diện firmware khác nhau được sử dụng trong các máy tính cá nhân và máy chủ.
+•	Kích thước: UEFI là một giao diện firmware mới hơn và có kích thước lớn hơn so với Legacy BIOS, điều này cho phép nó chứa thêm tính năng và công cụ quản lý.
+•	Hỗ trợ hệ điều hành: UEFI có thể hỗ trợ các hệ điều hành mới hơn và có thể chạy nhanh hơn so với Legacy BIOS, điều này giúp cho việc cài đặt hệ điều hành trở nên dễ dàng hơn.
+•	Bảo mật: UEFI có thể hỗ trợ các chức năng bảo mật cao hơn, chẳng hạn như xác thực chữ ký số và mã hóa dữ liệu, trong khi Legacy BIOS không hỗ trợ điều này.
+•	Tính năng mở rộng: UEFI cung cấp các tính năng mở rộng hơn, chẳng hạn như hỗ trợ định dạng lớn hơn cho đĩa cứng và khả năng chạy nhiều hệ điều hành cùng lúc, trong khi Legacy BIOS không hỗ trợ điều này.
+•	Quản lý thiết bị: UEFI cung cấp một giao diện quản lý thiết bị đồ họa, giúp người dùng dễ dàng quản lý và cấu hình các thiết bị cấu hình hệ thống, trong khi Legacy BIOS chỉ cung cấp một giao diện dòng lệnh.
+•	Tương thích: Một số thiết bị cũ không hỗ trợ UEFI, vì vậy nếu bạn muốn sử dụng chúng với máy tính mới, bạn cần phải sử dụng Legacy BIOS.

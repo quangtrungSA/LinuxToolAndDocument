@@ -1,0 +1,11 @@
+-----acpid-----
+
+nó là tên của một dịch vụ (daemon) quản lý sự kiện năng lượng (power management events) trên hệ thống Linux. 
+Dịch vụ này được sử dụng để theo dõi và xử lý các sự kiện liên quan đến năng lượng như khi máy tính được bật, tắt, đóng nắp laptop, hoặc xảy ra các sự kiện khác liên quan đến quản lý năng lượng.
+Dịch vụ acpid thường chạy tự động khi hệ thống khởi động và là một phần quan trọng của quản lý năng lượng trên các hệ thống Linux. 
+Nó cho phép hệ thống phản ứng đúng cách với các sự kiện năng lượng và thực hiện các hành động như đặt máy tính vào chế độ ngủ, đóng nắp laptop để tắt màn hình, và nhiều tác vụ khác.
+
+Để kiểm tra trạng thái acpid sử dụng systemctl:
+	systemctl status acpid
+Khởi động acpid:
+	ssystemctl start acpid

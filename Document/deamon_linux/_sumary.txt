@@ -1,0 +1,27 @@
+Tronghệ điều hành Linux, các daemon (dịch vụ nền) là các tiến trình hoạt động ngầm và thường được thiết lập để chạy tự động khi hệ thống khởi động. Dưới đây là một số daemon quan trọng trong Linux:
+
+1. init: Là tiến trình khởi đầu cho hệ thống, được thay thế bởi các hệ thống init mới như Systemd.
+
+2. Systemd: Là hệ thống init thay thế cho nhiều bản phân phối Linux hiện đại. Nó quản lý các daemon và tiến trình, cũng như cung cấp các tính năng như phân cấp và quản lý tài nguyên.
+
+3. sshd (OpenSSH): Dịch vụ SSH daemon, cho phép kết nối an toàn vào hệ thống từ xa.
+
+4. httpd (Apache): Apache HTTP Server là một daemon chịu trách nhiệm cho việc cung cấp dịch vụ máy chủ web trên hệ thống.
+
+5. nginx: Một daemon máy chủ web và proxy ngược hiệu suất cao, thường được sử dụng để phục vụ các trang web động và tĩnh.
+
+6. mysqld (MySQL) và postgresql: Các daemon quản lý cơ sở dữ liệu MySQL và PostgreSQL, cung cấp dịch vụ cơ sở dữ liệu cho các ứng dụng.
+
+7. c: Là daemon quản lý và thực thi các công việc định kỳ theo lịch trình.
+
+8. rsyslogd: Dịch vụ nhật ký hệ thống, quản lý và ghi lại thông báo từ các tiến trình và dịch vụ khác.
+
+9. udev: Là daemon quản lý thiết bị và sự kiện kernel, giúp tự động phát hiện và quản lý phần cứng.
+
+10. NetworkManager: Quản lý kết nối mạng, giúp dễ dàng cấu hình và chuyển đổi giữa các kết nối mạng.
+
+11. dbus-daemon: Dịch vụ hệ thống truyền tin hệ thống, cung cấp cơ chế truyền thông giữa các ứng dụng và dịch vụ.
+
+12. avahi-daemon: Dịch vụ auto-discovery mạng, giúp các thiết bị trên mạng tìm thấy và liên kết với nhau.
+
+Các daemon này đóng vai trò quan trọng trong việc duy trì và vận hành hệ thống Linux, cung cấp các dịch vụ cơ bản và chức năng cho người dùng và ứng dụng.

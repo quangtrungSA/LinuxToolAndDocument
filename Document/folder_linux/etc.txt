@@ -1,0 +1,29 @@
+--------/etc-------
+
+Thư mục /etc cũng là một trong những thư mục quan trọng trong hệ điều hành Linux. Nó chứa các tập tin cấu hình cho hệ thống và ứng dụng.
+Dưới đây là mô tả của một số thư mục và tập tin quan trọng trong /etc:
+/etc/passwd: Lưu thông tin về người dùng hệ thống, bao gồm tên người dùng, UID (User ID), GID (Group ID), đường dẫn thư mục home và trình shell mặc định.
+
+/etc/group: Lưu thông tin về các nhóm người dùng trên hệ thống, bao gồm tên nhóm, GID và danh sách các người dùng thuộc nhóm đó.
+
+/etc/hostname: Chứa tên máy chủ của hệ thống.
+
+/etc/hosts: Ánh xạ địa chỉ IP với tên máy chủ (hostname), được sử dụng để giải quyết tên máy chủ thành địa chỉ IP và ngược lại.
+
+/etc/resolv.conf: Cấu hình máy chủ DNS (Domain Name System) sử dụng để giải quyết tên miền thành địa chỉ IP.
+
+/etc/network: Chứa cấu hình mạng, bao gồm các tập tin như /etc/network/interfaces trên một số hệ thống Debian hoặc /etc/sysconfig/network-scripts/ trên một số hệ thống Red Hat.
+
+/etc/fstab: Liệt kê các ổ đĩa và các thiết bị lưu trữ khác cùng với các thông số cấu hình để hệ thống có thể tự động mount chúng khi khởi động.
+
+/etc/apt (hoặc /etc/yum): Các thư mục này chứa các tập tin cấu hình cho hệ thống quản lý gói trình quản lý gói Debian (APT) hoặc Red Hat (YUM/DNF).
+
+/etc/ssh: Chứa cấu hình cho dịch vụ SSH (Secure Shell).
+
+/etc/sudoers: Cấu hình quyền sudo, cho phép người dùng thực hiện các lệnh có quyền root.
+
+/etc/nginx (hoặc /etc/apache2): Cấu hình cho các dịch vụ máy chủ web Nginx hoặc Apache.
+
+/etc/sysctl.conf: Cấu hình kernel Linux thông qua sysctl.
+
+Các tập tin và thư mục trong /etc chứa thông tin quan trọng về cấu hình hệ thống và ứng dụng, và chúng có thể được chỉnh sửa để tùy chỉnh hành vi của hệ thống.

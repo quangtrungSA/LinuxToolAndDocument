@@ -1,0 +1,12 @@
+1.	/bin: Chứa các tệp tin thực thi cơ bản (binaries) cho các lệnh hệ thống.
+2.	/boot: Chứa các tệp tin và thư mục liên quan đến quá trình khởi động (boot process) của hệ thống, bao gồm kernel và tệp tin cấu hình của bootloader.
+3.	/etc: Là nơi chứa các tệp tin cấu hình hệ thống, bao gồm tệp tin cấu hình của hệ điều hành và ứng dụng.
+4.	/home: Thư mục chứa các thư mục cá nhân của người dùng. Mỗi người dùng thường có một thư mục con trong đây để lưu trữ tài liệu và cài đặt cá nhân.
+5.	/lib và /lib64: Chứa các thư viện cơ bản sử dụng bởi các tệp tin thực thi trong /bin và /sbin. /lib là cho các phiên bản 32-bit, trong khi /lib64 dành cho 64-bit.
+6.	/media và /mnt: Thư mục dùng để gắn (mount) các thiết bị lưu trữ ngoại vi, như ổ đĩa USB hoặc đĩa CD/DVD.
+7.	/opt: Thư mục dành cho cài đặt ứng dụng bên ngoài gói phân phối hệ thống.
+8.	/root: Thư mục home của người dùng root (superuser). Khác với /home, thư mục này chứa dữ liệu của người dùng root.
+9.	/srv: Thư mục này thường dùng để lưu trữ dữ liệu cho các dịch vụ hệ thống, ví dụ, các trang web (web server) có thể lưu dữ liệu tại đây.
+10.	/tmp: Chứa các tệp tạm thời (temporary files) được tạo và sử dụng bởi ứng dụng và quy trình hệ thống. Thường xóa đi sau khởi động lại hệ thống.
+11.	/usr: Chứa các ứng dụng và thư viện cài đặt cho toàn bộ hệ thống. Đây là một phần quan trọng của hệ thống Linux.
+12.	/var: Chứa các tệp tin biến thiên (volatile) như logs, tệp tin cache, và dữ liệu scủa các ứng dụng chạy trên hệ thống.

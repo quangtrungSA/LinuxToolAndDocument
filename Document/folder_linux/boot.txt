@@ -1,0 +1,11 @@
+/boot: Chứa các tệp tin và thư mục liên quan đến quá trình khởi động (boot process) của hệ thống, bao gồm kernel và tệp tin cấu hình của bootloader.
+
+Thư mục /boot/grub/ chứa các tệp và cấu hình liên quan đến GRUB (Grand Unified Boot Loader), một trình khởi động đa hệ thống phổ biến trong các hệ thống Linux và Unix. Dưới đây là một số chi tiết về thư mục /boot/grub/:
+1.	/boot/grub/grub.cfg: Đây là tệp cấu hình chính của GRUB 2. Nó chứa thông tin về cách GRUB sẽ hiển thị menu khởi động, các tùy chọn khởi động, và cách quản lý các hệ điều hành cài đặt trên hệ thống.
+2.	/boot/grub/i386-pc/ hoặc /boot/grub/x86_64-pc/: Đây là các thư mục chứa tệp thực thi của GRUB cho kiến trúc máy tính của bạn (x86_64-pc cho 64-bit và i386-pc cho 32-bit). Các tệp thực thi này bao gồm các phần của GRUB cần để khởi động hệ thống và tải kernel.
+3.	**/boot/grub/themes/ (tùy chọn): Nếu bạn sử dụng một giao diện (theme) cho GRUB, thư mục này chứa các tệp và hình ảnh liên quan đến giao diện đó.
+4.	**/boot/grub/fonts/ (tùy chọn): Nếu bạn đã cấu hình một font tùy chỉnh cho GRUB, thư mục này chứa các tệp font đó.
+5.	**/boot/grub/locale/ (tùy chọn): Thư mục này chứa các tệp ngôn ngữ cho GRUB, giúp hiển thị menu và thông báo trong ngôn ngữ cụ thể.
+
+Thư mục /boot/grub/ là một phần quan trọng của quá trình khởi động của hệ thống, và nó được sử dụng để quản lý cách GRUB tải và khởi động các hệ điều hành trên máy tính của bạn. 
+Các tệp và cấu hình trong thư mục này có thể được chỉnh sửa để tùy chỉnh quá trình khởi động của bạn hoặc để thêm tính năng như chọn nền, giao diện người dùng, và ngôn ngữ khởi động.

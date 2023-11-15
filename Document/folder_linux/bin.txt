@@ -1,0 +1,29 @@
+/bin: Chứa các tệp tin thực thi cơ bản (binaries) cho các lệnh hệ thống.
+
+Thư mục /bin là một trong những thư mục quan trọng nhất trong hệ thống Linux, chứa các tập tin thực thi cơ bản và cần thiết để hệ thống có thể khởi động và hoạt động. 
+Dưới đây là một số tập tin thực thi quan trọng và chức năng của chúng trong /bin:
+/bin/bash: Là trình shell mặc định cho nhiều hệ thống Linux. Shell là một giao diện dòng lệnh cho người dùng và có thể thực hiện các lệnh từ bàn phím hoặc từ tập tin lệnh.
+
+/bin/ls: Hiển thị danh sách các tập tin và thư mục trong một thư mục.
+
+/bin/cp: Sao chép tập tin hoặc thư mục.
+
+/bin/mv: Di chuyển hoặc đổi tên tập tin và thư mục.
+
+/bin/rm: Xóa (remove) tập tin hoặc thư mục.
+
+/bin/cat: Hiển thị nội dung của một hoặc nhiều tập tin.
+
+/bin/chmod: Thay đổi quyền truy cập của tập tin hoặc thư mục.
+
+/bin/chown: Thay đổi chủ sở hữu của tập tin hoặc thư mục.
+
+/bin/date: Hiển thị hoặc đặt thời gian hệ thống.
+
+/bin/mkdir: Tạo mới một thư mục.
+
+/bin/pwd: Hiển thị đường dẫn của thư mục hiện tại.
+
+/bin/su: Chuyển đổi sang tài khoản người dùng khác hoặc tài khoản root.
+
+Các tập tin thực thi này đều là những công cụ cơ bản mà người dùng và hệ thống sử dụng hàng ngày để quản lý và tương tác với hệ thống.

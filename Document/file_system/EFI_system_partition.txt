@@ -1,0 +1,12 @@
+------Phân vùng hệ thống tệp EFI-----
+Phân vùng hệ thống tệp EFI (EFI System Partition, ESP) là một phân vùng trên ổ đĩa của máy tính được sử dụng trong các hệ thống dựa trên chuẩn UEFI (Unified Extensible Firmware Interface). 
+Chuẩn UEFI thay thế chuẩn BIOS truyền thống và cung cấp một môi trường khởi động mới và linh hoạt hơn cho hệ thống máy tính.
+
+Phân vùng EFI chứa các tệp và thư mục quan trọng cần thiết để khởi động hệ thống và quản lý quá trình khởi động. Các thành phần quan trọng bao gồm : 
+	1.	EFI Boot Manager: Một trình quản lý khởi động hoặc bootloader có trên phân vùng EFI. Nó quản lý danh sách các tùy chọn khởi động (boot entries) và cho phép người dùng lựa chọn hệ điều hành hoặc tải các ứng dụng khác.
+	2.	EFI Bootloader Files: Các tệp thực thi bootloader như bootx64.efi cho hệ thống 64-bit. Những tệp này chịu trách nhiệm cho việc khởi động hệ thống và nạp kernel của hệ điều hành.
+	3.	EFI Variables: Các biến EFI được sử dụng để lưu trạng thái và cấu hình của hệ thống, chẳng hạn như Secure Boot state, thứ tự khởi động ưu tiên, và nhiều tùy chọn quan trọng khác.
+	4.	EFI Bootloader Configuration: Các tệp cấu hình cho bootloader như grub.cfg, refind.conf, hoặc loader.conf, tùy thuộc vào bootloader cụ thể được sử dụng.
+	
+Phân vùng EFI thường là một phân vùng FAT (File Allocation Table) với kích thước tối thiểu (thường khoảng 100MB) và đôi khi nằm ở đầu ổ đĩa hoặc ổ USB. Nó phải được đánh dấu là phân vùng EFI và được sử dụng bởi hệ thống để khởi động. 
+Khi cài đặt một hệ điều hành mới hoặc quản lý bootloader, phân vùng EFI cần được chọn làm điểm gắn kết (mount point) cho phân vùng EFI.

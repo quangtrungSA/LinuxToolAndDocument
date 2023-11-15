@@ -1,0 +1,7 @@
+--------/lib64-------
+Thư mục /lib64/ thường được sử dụng trong hệ thống Linux 64-bit để chứa thư viện (libraries) 64-bit.
+Thư viện này cần cho việc thực thi các ứng dụng 64-bit trên hệ thống.
+Thư mục /lib64/ cung cấp thư viện cho các ứng dụng 64-bit, trong khi thư mục /lib/ thường chứa thư viện 32-bit.
+Trong hệ thống Linux, thư mục /lib64/ thường được tạo để hỗ trợ kiến trúc 64-bit và không phải lúc nào cũng tồn tại. 
+Thư mục này có thể có tên khác trên các phiên bản Linux khác nhau hoặc không tồn tại tùy thuộc vào cấu hình cụ thể của hệ thống. 
+Thường, nó được sử dụng trên các phiên bản Linux 64-bit để lưu trữ các thư viện cần cho các ứng dụng 64-bit.

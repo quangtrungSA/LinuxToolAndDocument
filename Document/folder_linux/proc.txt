@@ -1,0 +1,13 @@
+------------------------------------------------/proc---------------------------------------------
+1/proc và /sys: Là các hệ thống tệp tin ảo để tương tác với kernel và cung cấp thông tin về quá trình và thiết bị hệ thống.
+2. /proc/self/mounts
+Tệp /proc/self/mounts là một tệp ảo nằm trong hệ thống tệp /proc của Linux. 
+Nó chứa thông tin về các hệ thống tệp đã được gắn kết (mounted) bởi quá trình hiện tại (tức là quá trình ghi tệp /proc/self/mounts đang chạy).
+Cụ thể, tệp /proc/self/mounts cung cấp thông tin về các hệ thống tệp đã được gắn kết, bao gồm đường dẫn, loại hệ thống tệp, tùy chọn gắn kết (mount options), và thông tin khác về mỗi hệ thống tệp đã gắn kết.
+•	Mỗi dòng trong tệp /proc/self/mounts tương ứng với một hệ thống tệp đã được gắn kết.
+•	Các cột tương ứng với thông tin về hệ thống tệp đã gắn kết, bao gồm đường dẫn gắn kết, loại hệ thống tệp, tùy chọn gắn kết, và thông tin khác.
+Lệnh mount và các công cụ quản lý hệ thống tệp thường sử dụng tệp /proc/self/mounts để hiển thị thông tin về các hệ thống tệp đã được gắn kết trong hệ thống và cũng để thực hiện việc gắn kết và unmount các hệ thống tệp.
+3./proc/cmdline
+Danh sách các tham số được truyền từ bootloader đến kernel được lưu trong tệp /proc/cmdline trong hệ thống tệp Linux. Đây là nơi mà kernel lấy các tham số được cung cấp từ bootloader để cấu hình khởi động hệ thống. Tham số này bao gồm các tùy chọn kernel, 
+tùy chọn của hệ thống tệp gốc (root filesystem), và các thông số khác liên quan đến quá trình khởi động.
+Bạn có thể đọc nội dung của tệp /proc/cmdline bằng lệnh cat hoặc bất kỳ trình soạn thảo văn bản nào

@@ -1,0 +1,14 @@
+-------cron deamon------
+Cron daemon (cron là viết tắt của "chronograph") là một dịch vụ trong hệ điều hành Linux và UNIX, được thiết kế để thực hiện các công việc định kỳ hoặc lên lịch.
+Nó là một chương trình chạy ngầm (background) và kiểm tra các tác vụ lên lịch để thực hiện theo chu kỳ thời gian cụ thể. 
+Các công việc lên lịch này có thể là các lệnh hoặc các tập tin shell script.
+----
+Cron daemon hoạt động dựa trên các tệp cấu hình được gọi là "crontab" (cron table), mỗi người dùng có thể có một crontab riêng.
+Crontab chứa thông tin về các công việc cần được thực hiện, cùng với thời gian và ngày cụ thể mà chúng sẽ được thực hiện.
+---
+Một số điều quan trọng về cron daemon:
+
+	1.Crond (Cron Daemon): Là quá trình chính thực hiện việc quản lý và thực hiện các công việc lên lịch.
+
+	2. Crontab: Là một tệp cấu hình đặc biệt mà mỗi người dùng có thể có một cái riêng. Người dùng có thể chỉ định công việc, thời gian, và ngày cụ thể trong crontab của họ.
+----
