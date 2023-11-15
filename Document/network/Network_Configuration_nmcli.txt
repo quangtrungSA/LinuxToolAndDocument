@@ -1,0 +1,85 @@
+----- NetworkManager tips -----
+NetworkManager is spelled with no spaces between the words
+
+Command-line interface for NetworkManager is nmcli
+
+Get general command help for nmcli via: nmcli help
+
+nmcli commands can be shortened
+
+Graphical User Interface (GUI) for NetworkManager
+is typically reachable by an icon in the main desktop window
+
+----- NetworkManager daemon -----
+NetworkManager configuration file is /etc/NetworkManager/NetworkManager.conf
+
+Additional NetworkManager configuration are located in
+/etc/NetworkManager/ directory tree
+
+Get general help on NetworkManager daemon: 
+man NetworkManager
+
+-----View overall network settings-----
+Commands:
+	1.nmcli general status
+	2.nmcli device status
+	3.nmcli connection show
+                 
+Helpful options:
+	1.Turn off colors:  -c no or -c n
+	2.Easy-to-read output: -p
+
+-----View connection settings-----
+All profiles: nmcli connection show
+
+Specific profile by ID: nmcli connection show id Name
+	1.If Name has spaces in it, uses quotation marks
+	2.Lots of settings are display so consider piping to less
+	3.Example:  nmcli connection show id 'Wired connection 1'  | less
+show works with:
+	id
+	uuid
+	path
+	apath
+----- Add/Modify configuration settings -----
+Various NetworkManager setting descriptions: man nm-settings
+
+Following requires super user privileges
+
+Add a new interface: nmcli add id Name Item Setting
+
+Modify an existing interface: nmcli modify id Name Item Setting
+
+Nice option:  -a or --ask (asks for any missing needed arguments)
+
+Example:  sudo nmcli add id 'Connection 5' ipv4.method auto
+
+----- More on configuration settings -----
+Once configuration for connection added or modified,
+must restart interface
+Example:  sudo nmcli connection up id 'Connection 1'
+
+Additional nmcli connection commands:
+	down
+	edit
+	delete
+	monitor
+	
+----- More on configuration settings -----
+These commands require super user privileges
+
+Disable networking for all network interfaces: nmcli networking off
+
+Enable networking for all network interfaces: nmcli networking on
+                 
+Manage radio signal interfaces:
+	1.Enable all Wi-Fi interfaces: nmcli radio wifi on 
+	2.Disable all Wi-Fi interfaces: nmcli radio wifi off
+	3.Enable all radio signal interfaces (WWAN too): nmcli all on
+View host name: nmcli general hostname
+
+Change host name: sudo nmcli general hostname NewName
+
+Monitor network interface activity: sudo nmcli monitor
+
+More commands and details:  man nmcli

@@ -1,0 +1,84 @@
+Storage=
+	Choices: auto, persistent, none, or volatile 
+	Determines where to store journal data
+
+Compress=
+	Choices: yes or no
+	Determines whether journal files are compressed
+
+Seal=
+	Choices: yes or no
+	Determines whether journal files are seal with keys
+	to protect from unnoticed modification
+SplitMode=
+	Choices: uid or none 
+	Determines  whether to split journal files per user
+
+ForwardToSyslog=
+	Choices: yes or no
+	Determines whether messages are forwarded to 
+a syslog service
+
+ForwardToWall=
+	Choices: yes or no
+	Determines whether messages are forwarded to wall
+	
+------- journald.conf settings for rotation------
+Enforces size limits on persistent (volatile) journal files:
+	SystemMaxUse= (RuntimeMaxUse=)
+	SystemKeepFree= (RuntimeKeepFree=)
+	SystemMaxFileSize= (RuntimeMaxFileSize=)
+	SystemMaxFiles= (RuntimeMaxFiles=)
+
+Maximum time to store entries in journal file before rotation:
+MaxFileSec=
+
+Maximum time to store entries in journal file before deletion: MaxRetentionSec=
+
+Enter man journald.conf to see additional settings
+
+
+------ journalctl command basic options ------
+To see all journal entries:
+	Use super user privileges or 
+	Have journal group membership (example: systemd-journal)
+
+Turn off less pager display: --no-pager
+
+Display last few journal entries: -e
+
+Show journal entries in reverse order: -r
+
+------ journalctl command timestamp options ------
+
+Since date/time: -S dateTimeSpecification
+
+Until date/time: -U dateTimeSpecification
+
+dateTimeSpecification syntax:
+	YYYY-MM-DD HH:MM:SS (example: 2022-10-15 08:30:00)
+	If date omitted, current date is used
+
+	Allowed keywords:
+		today (in place of YYYY-MM-DD )
+		yesterday (in place of YYYY-MM-DD)
+		now (in place of HH:MM:SS)
+		
+-----journalctl command type options-----
+Kernel entries (similar to dmesg): -k 
+
+Specific systemd Unit: -u unitName or -u pattern
+
+syslog protocol filters:
+	Facility: --facility facilityName
+	Priority: -p priorityName
+	Identifier: -t identifier
+-----journalctl command journal options-----
+Different directory: -D directoryName
+
+Different file name: --file fileName
+
+Different directory and file name: --file directoryName/fileName
+
+File globbing to grab several files: --file fileNamePattern
+

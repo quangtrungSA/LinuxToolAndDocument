@@ -1,0 +1,90 @@
+DISPLAY
+	Related to the X server, this variable’s value is normally made up of three elements:
+-----------------------------------------------------------------
+HISTCONTROL
+	This variable controls what commands get saved into the HISTFILE (see below). Their are
+three possible values
+$ echo $HISTCONTROL
+ignoreboth
+-----------------------------------------------------------------
+HISTSIZE
+	This sets the number of commands to be stored in memory while the shell session lasts.
+	
+$ echo $HISTSIZE
+1000
+-----------------------------------------------------------------
+HISTFILESIZE
+	This sets the number of commands to be saved in HISTFILE both at the start and at the end of
+the session
+$ echo $HISTFILESIZE
+2000
+-----------------------------------------------------------------
+HISTFILE
+	The name of the file which stores all commands as they are typed. By default this file is located
+at ~/.bash_history
+$ echo $HISTFILE
+/home/user2/.bash_history
+-----------------------------------------------------------------
+HOME
+	This variable stores the absolute path of the current user’s home directory and it is set when
+the user logs in.
+-----------------------------------------------------------------
+HOSTNAME
+	This variable stores the TCP/IP name of the host computer:
+$ echo $HOSTNAME
+debian
+-----------------------------------------------------------------
+HOSTTYPE
+	This stores the architecture of the host computer’s processor:
+$ echo $HOSTTYPE
+x86_64
+-----------------------------------------------------------------
+LANG
+	This variable saves the locale of the system:
+$ echo $LANG
+en_UK.UTF-8
+-----------------------------------------------------------------
+LD_LIBRARY_PATH
+	This variable consists of a colon-separated set of directories where shared libraries are shared
+by programs:
+$ echo $LD_LIBRARY_PATH
+/usr/local/lib
+-----------------------------------------------------------------
+MAIL
+	This variable stores the file in which Bash searches for email:
+by programs:
+$ echo $MAIL
+/var/mail/quangtrung
+-----------------------------------------------------------------
+MAILCHECK
+	This variable stores a numeric value which indicates in seconds the frequency with which Bash
+checks for new mail:
+$ echo $MAILCHECK
+60
+-----------------------------------------------------------------
+PATH
+	This environment variable stores the list of directories where Bash looks for executable files
+when told to run any program
+$ echo $PATH
+/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/usr/local/sbin
+-----------------------------------------------------------------
+PS1
+	This variable stores the value of the Bash prompt. In the following chunk of code (also from
+	/etc/profile), the if statement tests for the identity of the user and gives them a very
+	discrete prompt accordingly ( # for root or $ for regular users)
+PS2
+	Normally set to > and used as a continuation prompt for long multiline commands.
+PS3
+	Used as the prompt for the select command.
+PS4
+	Normally set to + and used for debugging
+-----------------------------------------------------------------
+PATH
+	This variable stores the absolute path of the current shell:
+$ echo $SHELL
+/bin/bash
+-----------------------------------------------------------------
+USER
+	This stores the name of the current user:
+$ echo $USER
+carol

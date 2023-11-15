@@ -1,0 +1,36 @@
+----------The TCP Protocol----------
+Transmission Control Protocol (TCP)
+Connection protocol (uses three-way handshake)
+Operates at the transport layer
+
+Some protocols that use it:
+	-Hypertext transfer protocol over TLS (HTTPS)
+	-Hypertext transfer protocol (HTTP)
+	-Simple mail transfer protocol (SMTP)
+	-File transfer protocol (FTP)
+----------The UDP Protocol----------
+User Datagram Protocol (UDP)
+Connection-less protocol (does NOT use three-way handshake)
+Operates at the transport layer
+Used by Domain Name System (DNS); streaming media apps
+----------The IP Protocol----------
+Internet Protocol (IP)
+Connection-less protocol (does NOT use three-way handshake)
+Operates at the network layer
+Best effort method for transferring data
+
+Used by:
+	-TCP
+	-UDP
+	-ICMP
+----------The ICMP Protocol----------
+Internet Control Message Protocol (ICMP)
+Connection-less protocol (does NOT use three-way handshake)
+Operates at the network layer
+Data delivery is not guaranteed
+
+Used by these commands:
+	-ping and ping6
+	-traceroute and traceroute6
+
+Private address rangers are10.0.0.0 to 10.255.255.255, 172.16.0.0 to 172.31.255.255, and 192.168.0.0 to 192.168.255.255 Objective 109.1

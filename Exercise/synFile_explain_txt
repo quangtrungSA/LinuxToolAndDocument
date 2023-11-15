@@ -1,0 +1,13 @@
+set -ef: Dòng này đảm bảo rằng script sẽ thoát nếu bất kỳ lệnh nào mà nó chạy kết thúc với trạng thái không phải là zero.
+
+FILE=~/.sync.list: Biến FILE được thiết lập là đường dẫn của một tệp chứa danh sách các mục cần đồng bộ. Theo mặc định, tệp này được mong đợi ở ~/.sync.list.
+
+FROM=$1 và TO=$2: Các biến này nhận giá trị của đối số dòng lệnh thứ nhất và thứ hai, tương ứng. Chúng đại diện cho thư mục nguồn và thư mục đích cho việc đồng bộ.
+
+Kiểm tra xem cả hai thư mục nguồn và đích có tồn tại hay không. Nếu không, in một thông báo sử dụng và thoát với mã lỗi.
+
+mapfile -t LIST < $FILE: Dòng này đọc nội dung của tệp được chỉ định bởi FILE vào một mảng được gọi là LIST.
+
+Lặp qua từng mục trong mảng LIST và đồng bộ các mục tương ứng từ thư mục nguồn (FROM) sang thư mục đích (TO) bằng cách sử dụng rsync. Tùy chọn --delete đảm bảo rằng bất kỳ tệp nào thừa ở thư mục đích đều bị xóa.
+
+Trong vòng lặp, script in đường dẫn nguồn và đích cho mỗi mục trước khi thực hiện lệnh rsync.

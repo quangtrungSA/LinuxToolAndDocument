@@ -1,0 +1,26 @@
+------ Viewing host name ------
+echo $HOSTNAME
+cat /etc/hostname or cat /etc/HOSTNAME
+hostname
+hostnamectl or hostnamectl status
+----- Global vs local host names -----
+Global
+	1.Used via Internet or company WAN
+	2.Requires DNS services
+	3.Register unique name and IP address(es) with ICANN
+Local
+	1.Company: name via local standards
+	2.Personal: name it as you choose
+----- Change a system host name -----
+All these methods require super user privileges
+
+-Old Red-Hat based distribution method:
+-Edit the /etc/sysconfig/network file
+	1.Add HOSTNAME=new-host-name to file bottom
+	1.Restart system or network
+
+-Edit the /etc/hostname or /etc/HOSTNAME file;
+	1.add new-host-name to file bottom (may need to reboot)
+
+-If system uses systemd: 
+	1.hostnamectl set-hostname new-host-name
