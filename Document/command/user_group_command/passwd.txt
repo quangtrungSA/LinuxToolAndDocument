@@ -1,0 +1,35 @@
+Lệnh `passwd` trong hệ thống Linux/Unix được sử dụng để thay đổi mật khẩu của người dùng. Dưới đây là một số option phổ biến đi kèm với lệnh `passwd`:
+
+1. Tên người dùng: Nếu không có option nào được sử dụng, `passwd` sẽ thay đổi mật khẩu cho người dùng hiện tại.
+
+      passwd
+   
+2. -l, --lock: Khóa mật khẩu người dùng. Sau khi mật khẩu bị khóa, người dùng không thể đăng nhập bằng mật khẩu.
+
+      passwd -l username
+   
+3. -u, --unlock: Mở khóa mật khẩu người dùng. Cho phép người dùng đăng nhập bằng mật khẩu.
+
+      passwd -u username
+   
+4. -e, --expire: Yêu cầu người dùng thay đổi mật khẩu trong lần đăng nhập kế tiếp.
+
+      passwd -e username
+   
+5. -n, --mindays MIN_DAYS: Xác định số ngày tối thiểu giữa các lần thay đổi mật khẩu.
+
+      passwd -n 7 username
+   
+6. -x, --maxdays MAX_DAYS: Xác định số ngày tối đa giữa các lần thay đổi mật khẩu.
+
+      passwd -x 90 username
+   
+7. -w, --warndays WARN_DAYS: Thông báo cho người dùng trước số ngày quy định trước khi mật khẩu hết hạn.
+
+      passwd -w 7 username
+   
+8. -d, --delete: Xóa mật khẩu người dùng. Người dùng sẽ không còn có mật khẩu và có thể đăng nhập mà không cần mật khẩu.
+
+      passwd -d username
+   
+Lưu ý rằng một số option có thể thay đổi tùy thuộc vào phiên bản cụ thể của `passwd` và hệ điều hành bạn đang sử dụng. Đối với thông tin chi tiết, bạn có thể kiểm tra tài liệu hệ thống hoặc sử dụng lệnh `man passwd` để đọc tài liệu trực tuyến.

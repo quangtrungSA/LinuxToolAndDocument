@@ -1,0 +1,29 @@
+--------chage-------
+
+Lệnh `chage` trong hệ thống Linux/Unix được sử dụng để thay đổi các thuộc tính liên quan đến mật khẩu của người dùng, như ngày hết hạn, thời gian thông báo, và các thuộc tính khác. Dưới đây là một số option phổ biến đi kèm với lệnh `chage`:
+
+1. -d, --lastday LAST_DAY: Xác định ngày cuối cùng mà người dùng có thể đăng nhập hệ thống.
+
+      chage -d YYYY-MM-DD username
+   
+2. -E, --expiredate EXPIRE_DATE: Đặt ngày hết hạn cho tài khoản người dùng.
+
+      chage -E YYYY-MM-DD username
+   
+3. -I, --inactive INACTIVE: Xác định số ngày không hoạt động trước khi tài khoản bị khóa.
+
+      chage -I days username
+   
+4. -m, --mindays MIN_DAYS: Xác định số ngày tối thiểu giữa các lần thay đổi mật khẩu.
+
+      chage -m days username
+   
+5. -M, --maxdays MAX_DAYS: Xác định số ngày tối đa giữa các lần thay đổi mật khẩu.
+
+      chage -M days username
+   
+6. -W, --warndays WARN_DAYS: Thông báo cho người dùng trước số ngày quy định trước khi mật khẩu hết hạn.
+
+      chage -W days username
+   
+Lưu ý rằng một số option có thể thay đổi tùy thuộc vào phiên bản cụ thể của `chage` và hệ điều hành bạn đang sử dụng. Đối với thông tin chi tiết, bạn có thể kiểm tra tài liệu hệ thống hoặc sử dụng lệnh `man chage` để đọc tài liệu trực tuyến.

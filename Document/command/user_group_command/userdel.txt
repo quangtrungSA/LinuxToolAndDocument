@@ -1,0 +1,18 @@
+
+-------userdel-------
+Lệnh `userdel` trong hệ thống Linux/Unix được sử dụng để xóa một tài khoản người dùng khỏi hệ thống. 
+Dưới đây là một số option phổ biến đi kèm với lệnh `userdel`:
+
+1. -r, --remove: Xóa thư mục home của người dùng và tất cả các dữ liệu liên quan.
+
+      userdel -r username
+   
+   Lưu ý rằng việc sử dụng `-r` là quan trọng nếu bạn muốn xóa tất cả các dữ liệu của người dùng, bao gồm thư mục home.
+
+2. -f, --force: Xóa người dùng mà không yêu cầu xác nhận.
+
+      userdel -f username
+   
+   Lựa chọn này có thể hữu ích khi bạn muốn xóa một người dùng mà không cần xác nhận từ người dùng.
+
+Lưu ý rằng một số option có thể thay đổi tùy thuộc vào phiên bản cụ thể của `userdel` và hệ điều hành bạn đang sử dụng. Đối với thông tin chi tiết, bạn có thể kiểm tra tài liệu hệ thống hoặc sử dụng lệnh `man userdel` để đọc tài liệu trực tuyến.

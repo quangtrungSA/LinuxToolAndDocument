@@ -1,0 +1,9 @@
+Lệnh `groupdel` trong hệ thống Linux/Unix được sử dụng để xóa một nhóm từ hệ thống. 
+`groupdel` không có nhiều option, vì chủ yếu nó được sử dụng để xóa nhóm mà không cần quá nhiều thay đổi.
+ Dưới đây là một ví dụ về cách sử dụng lệnh `groupdel`:
+
+1. groupdel: Xóa một nhóm khỏi hệ thống.
+
+   groupdel groupname
+
+Lưu ý rằng không có nhiều option với `groupdel`, và cách chính để sử dụng nó là chỉ cần đưa tên nhóm cần xóa. Đối với thông tin chi tiết và các tùy chọn cụ thể, bạn có thể kiểm tra tài liệu hệ thống hoặc sử dụng lệnh `man groupdel` để đọc tài liệu trực tuyến.

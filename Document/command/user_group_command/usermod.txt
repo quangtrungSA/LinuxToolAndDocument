@@ -1,0 +1,45 @@
+-------usermod------
+Lệnh `usermod` trong hệ thống Linux/Unix được sử dụng để thay đổi các thuộc tính của người dùng trong hệ thống. 
+Dưới đây là một số option phổ biến đi kèm với lệnh `usermod`:
+
+1. -c, --comment COMMENT: Thay đổi hoặc thêm mô tả cho người dùng.
+
+      usermod -c "John Doe" username
+   
+2. -d, --home HOME_DIR: Thay đổi thư mục home của người dùng.
+
+      usermod -d /new/home/directory username
+   
+3. -g, --gid GROUP: Thay đổi nhóm chính của người dùng.
+
+      usermod -g groupname username
+   
+4. -G, --groups GROUP1[,GROUP2,...[,GROUPN]]: Thay đổi danh sách các nhóm mà người dùng thuộc vào. Lưu ý rằng nếu sử dụng option này mà không có danh sách nhóm, người dùng sẽ bị xóa khỏi tất cả các nhóm không được liệt kê trong danh sách.
+
+      usermod -G group1,group2 username
+   
+5. -a, --append: Sử dụng cùng với option -G để thêm người dùng vào các nhóm mà không xóa khỏi nhóm hiện tại.
+
+      usermod -aG group1,group2 username
+   
+6. -s, --shell SHELL: Thay đổi loại shell mặc định cho người dùng.
+
+      usermod -s /bin/bash username
+   
+7. -u, --uid UID: Thay đổi ID của người dùng.
+
+      usermod -u 1001 username
+   
+8. -l, --login NEW_LOGIN: Thay đổi tên đăng nhập của người dùng.
+
+      usermod -l newusername oldusername
+   
+9. -L, --lock: Khóa mật khẩu người dùng.
+
+      usermod -L username
+   
+10. -U, --unlock: Mở khóa mật khẩu người dùng.
+
+      usermod -U username
+   
+Lưu ý rằng một số option có thể thay đổi tùy thuộc vào phiên bản cụ thể của `usermod` và hệ điều hành bạn đang sử dụng. Đối với thông tin chi tiết, bạn có thể kiểm tra tài liệu hệ thống hoặc sử dụng lệnh `man usermod` để đọc tài liệu trực tuyến.

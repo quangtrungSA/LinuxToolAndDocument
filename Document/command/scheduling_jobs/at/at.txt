@@ -1,0 +1,35 @@
+Lệnh `at` trong hệ thống Linux/Unix được sử dụng để thực hiện một công việc hoặc lệnh vào một thời điểm cụ thể trong tương lai. 
+Dưới đây là một số option phổ biến đi kèm với lệnh `at`:
+
+1. -m, --mail: Gửi thông báo email cho người dùng sau khi công việc hoàn thành.
+
+      at -m 15:30
+   
+   Điều này sẽ mở trình soạn thảo để bạn có thể nhập các lệnh, và sau khi bạn hoàn thành và lưu lại, công việc sẽ được đặt vào lịch và một email thông báo sẽ được gửi.
+
+2. -l, --list: Liệt kê các công việc đã được lập lịch cho người dùng hiện tại.
+
+      at -l
+   
+3. -r, --remove: Xóa công việc có số định danh từ lịch.
+
+      at -r job_number
+   
+4. -d, --delete: Xóa công việc có số định danh từ lịch, nhưng không gửi thông báo email.
+
+      at -d job_number
+	  
+------sample-------
+$ at 09:30 AM
+warning: commands will be executed using /bin/sh
+at> ./foo.sh
+at> Ctrl+D
+job 13 at Sat Sep 14 09:30:00 2019
+$ at now +2 hours
+warning: commands will be executed using /bin/sh
+at> ./bar.sh
+at> Ctrl+D
+job 14 at Sat Sep 14 11:10:00 2019
+   
+Lưu ý rằng một số option có thể thay đổi tùy thuộc vào phiên bản cụ thể của `at` và hệ điều hành bạn đang sử dụng. 
+Đối với thông tin chi tiết, bạn có thể kiểm tra tài liệu hệ thống hoặc sử dụng lệnh `man at` để đọc tài liệu trực tuyến.

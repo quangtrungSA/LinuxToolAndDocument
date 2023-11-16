@@ -1,0 +1,28 @@
+------groups-----
+Lệnh `groups` trong hệ thống Linux/Unix được sử dụng để hiển thị danh sách các nhóm mà một người dùng thuộc vào. Dưới đây là một số option phổ biến đi kèm với lệnh `groups`:
+
+1. Tên người dùng hoặc UID: Khi sử dụng `groups` mà không có option, nó sẽ hiển thị danh sách các nhóm của người dùng hiện tại.
+
+      groups
+   
+   hoặc
+
+      groups username
+   
+   hoặc
+
+      groups UID
+   
+2. -g, --group: Hiển thị chỉ ID của nhóm chính của người dùng.
+
+      groups -g username
+   
+3. -n, --name: Hiển thị tên thay vì chỉ ID của nhóm.
+
+      groups -n username
+   
+4. -u, --user: Hiển thị thông tin về người dùng và các nhóm mà người dùng thuộc vào.
+
+      groups -u username
+   
+Lưu ý rằng một số option có thể thay đổi tùy thuộc vào phiên bản cụ thể của `groups` và hệ điều hành bạn đang sử dụng. Đối với thông tin chi tiết, bạn có thể kiểm tra tài liệu hệ thống hoặc sử dụng lệnh `man groups` để đọc tài liệu trực tuyến.

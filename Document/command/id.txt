@@ -1,0 +1,35 @@
+Lệnh `id` trong hệ thống Linux/Unix được sử dụng để hiển thị thông tin về người dùng và nhóm người dùng. Dưới đây là một số option phổ biến đi kèm với lệnh `id`:
+
+1. Tên người dùng hoặc UID: Khi sử dụng `id` mà không có option, nó sẽ hiển thị thông tin về người dùng hiện tại.
+
+      id
+   
+   hoặc
+
+      id username
+   
+   hoặc
+
+      id UID
+   
+2. -g, --group: Hiển thị ID của nhóm chính của người dùng.
+
+      id -g username
+   
+3. -G, --groups: Hiển thị danh sách các nhóm mà người dùng thuộc vào.
+
+      id -G username
+   
+4. -n, --name: Hiển thị tên của người dùng và các nhóm, thay vì hiển thị ID.
+
+      id -n username
+   
+5. -u, --user: Hiển thị chỉ ID của người dùng.
+
+      id -u username
+   
+6. -r, --real: Hiển thị chỉ số thực (real) của người dùng và nhóm, thay vì chỉ số hiệu ứng (effective).
+
+      id -r username
+   
+Lưu ý rằng một số option có thể thay đổi tùy thuộc vào phiên bản cụ thể của `id` và hệ điều hành bạn đang sử dụng. Đối với thông tin chi tiết, bạn có thể kiểm tra tài liệu hệ thống hoặc sử dụng lệnh `man id` để đọc tài liệu trực tuyến.

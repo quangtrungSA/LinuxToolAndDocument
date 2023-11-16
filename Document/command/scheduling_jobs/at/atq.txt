@@ -1,0 +1,29 @@
+Lệnh `atq` trong hệ thống Linux/Unix được sử dụng để liệt kê các công việc đã được đặt trong lịch đợi để chạy theo lịch của `at`. 
+Dưới đây là một số option phổ biến đi kèm với lệnh `atq`:
+
+1. Không có option: Khi sử dụng `atq` mà không có option, nó sẽ liệt kê tất cả các công việc đã được đặt trong lịch đợi cho người dùng hiện tại.
+
+   ```bash
+   atq
+   
+2. -u, --user USER: Liệt kê các công việc đang đợi của người dùng cụ thể.
+
+   ```bash
+   atq -u username
+   
+3. -q, --queue QUEUE: Liệt kê công việc trong một hàng đợi cụ thể. Hàng đợi mặc định là "a" (at).
+
+   ```bash
+   atq -q a
+   
+4. -l, --long: Hiển thị đầu ra dưới dạng đầy đủ với thông tin chi tiết về công việc.
+
+   ```bash
+   atq -l
+   
+5. -v, --verbose: Hiển thị đầu ra dưới dạng chi tiết với thông tin thêm về thời gian chạy và người tạo công việc.
+
+   ```bash
+   atq -v
+   
+Lưu ý rằng một số option có thể thay đổi tùy thuộc vào phiên bản cụ thể của `atq` và hệ điều hành bạn đang sử dụng. Đối với thông tin chi tiết, bạn có thể kiểm tra tài liệu hệ thống hoặc sử dụng lệnh `man atq` để đọc tài liệu trực tuyến.

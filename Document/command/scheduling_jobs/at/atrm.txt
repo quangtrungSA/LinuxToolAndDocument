@@ -1,0 +1,19 @@
+--------- atrm -------
+Lệnh `atrm` trong hệ thống Linux/Unix được sử dụng để xóa các công việc đặt lịch bằng `at`. Dưới đây là một số option phổ biến đi kèm với lệnh `atrm`:
+
+1. Không có option: Khi sử dụng `atrm` mà không có option, bạn chỉ cần cung cấp số định danh của công việc để xóa.
+
+   atrm job_number
+   
+
+2. -a, --all: Xóa tất cả các công việc đang đợi của người dùng hiện tại.
+
+   atrm -a
+   
+
+3. -u, --user USER: Xóa tất cả các công việc đang đợi của một người dùng cụ thể.
+
+   atrm -u username
+   
+
+Lưu ý rằng một số option có thể thay đổi tùy thuộc vào phiên bản cụ thể của `atrm` và hệ điều hành bạn đang sử dụng. Đối với thông tin chi tiết, bạn có thể kiểm tra tài liệu hệ thống hoặc sử dụng lệnh `man atrm` để đọc tài liệu trực tuyến.

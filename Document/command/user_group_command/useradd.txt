@@ -1,0 +1,57 @@
+
+--------------useradd------------
+`useradd` là một lệnh trong hệ thống Linux/Unix được sử dụng để tạo mới một tài khoản người dùng mới trên hệ thống. Dưới đây là một số option phổ biến đi kèm với lệnh `useradd`:
+
+1. -c, --comment COMMENT: Thêm một comment hoặc mô tả về người dùng. Thông thường, đây là tên đầy đủ hoặc mô tả ngắn về người dùng.
+
+   
+   useradd -c "John Doe" username
+   
+
+2. -d, --home HOME_DIR: Xác định thư mục home của người dùng. Nếu không sử dụng option này, thư mục home sẽ được tạo tự động trong thư mục /home.
+
+   
+   useradd -d /home/username username
+   
+
+3. -g, --gid GROUP: Xác định ID của nhóm mặc định cho người dùng. Nếu không sử dụng option này, một nhóm mới sẽ được tạo với tên là username và có cùng ID với người dùng.
+
+   
+   useradd -g groupname username
+   
+
+4. -G, --groups GROUP1[,GROUP2,...[,GROUPN]]: Xác định danh sách các nhóm mà người dùng sẽ thuộc vào, ngoài nhóm mặc định.
+
+   
+   useradd -G group1,group2 username
+   
+
+5. -m, --create-home: Tạo thư mục home nếu nó chưa tồn tại.
+
+   
+   useradd -m username
+   
+
+6. -s, --shell SHELL: Xác định loại shell mặc định cho người dùng.
+
+   useradd -s /bin/bash username
+
+7. -u, --uid UID: Xác định ID người dùng. Nếu không xác định, hệ thống sẽ tự động chọn một ID không trùng lặp.
+
+   
+   useradd -u 1001 username
+   
+
+8. -e, --expiredate EXPIRE_DATE: Xác định ngày hết hạn cho tài khoản người dùng.
+
+   
+   useradd -e 2023-12-31 username
+   
+
+9. -p, --password PASSWORD: Đặt mật khẩu cho người dùng. Lưu ý rằng cách sử dụng này có thể tạo ra vấn đề bảo mật vì mật khẩu có thể bị hiển thị trong lịch sử lệnh.
+
+   
+   useradd -p mypassword username
+   
+
+Lưu ý rằng một số option có thể thay đổi tùy thuộc vào phiên bản cụ thể của `useradd` và hệ điều hành bạn đang sử dụng. Đối với thông tin chi tiết, bạn có thể kiểm tra tài liệu hệ thống hoặc sử dụng lệnh `man useradd` để đọc tài liệu trực tuyến.

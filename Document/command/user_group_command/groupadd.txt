@@ -1,0 +1,15 @@
+Lệnh `groupadd` trong hệ thống Linux/Unix được sử dụng để tạo mới một nhóm trên hệ thống. Dưới đây là một số option phổ biến đi kèm với lệnh `groupadd`:
+
+1. -g, --gid GID: Xác định ID của nhóm. Nếu không sử dụng option này, hệ thống sẽ tự động chọn một ID không trùng lặp.
+
+      groupadd -g 1001 groupname
+   
+2. -r, --system: Tạo một nhóm hệ thống. Nhóm hệ thống thường được sử dụng cho các tài khoản hệ thống và có một loạt các giới hạn đặc biệt.
+
+      groupadd -r systemgroup
+   
+3. -f, --force: Thực hiện tạo nhóm mặc dù có lỗi. Nếu nhóm đã tồn tại, lựa chọn này sẽ bỏ qua lỗi và tiếp tục.
+
+      groupadd -f groupname
+   
+Lưu ý rằng một số option có thể thay đổi tùy thuộc vào phiên bản cụ thể của `groupadd` và hệ điều hành bạn đang sử dụng. Đối với thông tin chi tiết, bạn có thể kiểm tra tài liệu hệ thống hoặc sử dụng lệnh `man groupadd` để đọc tài liệu trực tuyến.

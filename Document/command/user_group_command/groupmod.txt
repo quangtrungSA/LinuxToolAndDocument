@@ -1,0 +1,17 @@
+-----groupmod-----
+
+Lệnh `groupmod` trong hệ thống Linux/Unix được sử dụng để thay đổi các thuộc tính của một nhóm. Dưới đây là một số option phổ biến đi kèm với lệnh `groupmod`:
+
+1. -g, --gid GID: Thay đổi ID của nhóm. Nếu không sử dụng option này, ID nhóm sẽ không thay đổi.
+
+      groupmod -g 1002 groupname
+   
+2. -n, --new-name NEW_GROUP_NAME: Thay đổi tên của nhóm.
+
+      groupmod -n newgroupname oldgroupname
+   
+3. -o, --non-unique: Cho phép sử dụng một ID nhóm không duy nhất.
+
+      groupmod -o groupname
+   
+Lưu ý rằng một số option có thể thay đổi tùy thuộc vào phiên bản cụ thể của `groupmod` và hệ điều hành bạn đang sử dụng. Đối với thông tin chi tiết, bạn có thể kiểm tra tài liệu hệ thống hoặc sử dụng lệnh `man groupmod` để đọc tài liệu trực tuyến.
